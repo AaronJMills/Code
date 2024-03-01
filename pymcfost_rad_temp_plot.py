@@ -31,8 +31,8 @@ valid = ~np.isnan(y_values)
 x_values = x_values[valid]
 y_values = y_values[valid]
 
-print(x_values)
-print(y_values)
+#print(x_values)
+#print(y_values)
 
 plt.scatter(x_values, y_values, s=3, c='black')
 
@@ -42,8 +42,8 @@ coefficients = np.polyfit(np.log10(x_values), y_values, 1)
 poly_x = np.linspace(min(x_values), max(x_values), 100)
 poly_y = coefficients[0] * np.log10(poly_x) + coefficients[1]
 
-print(poly_x)
-print(poly_y)
+#print(poly_x)
+#print(poly_y)
 
 plt.plot(poly_x, poly_y, color='lightblue')
 
